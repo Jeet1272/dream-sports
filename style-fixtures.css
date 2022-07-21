@@ -1,0 +1,237 @@
+/*-------------
+ Fonts 
+ -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=M+PLUS+Rounded+1c&family=Poppins:wght@700&family=Space+Grotesk:wght@500&family=Trispace&display=swap');
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Trispace', sans-serif;
+    margin: 0;
+}
+
+/*--------------
+       banner 
+  --------------*/
+.heading {
+    display: flex;
+    background-color: seagreen;
+    color: white;
+    margin: 5% 10%;
+    border-radius: 3%;
+}
+
+.heading div {
+    width: 50%;
+}
+
+.header-left {
+    padding: 5% 10%;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.watch-button {
+    text-decoration: none;
+    background-color: rgb(241, 11, 11);
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.heading img {
+    width: 90%;
+    height: 100%;
+}
+
+/* -------------------------------
+     Selector and blog section 
+   -------------------------------*/
+.blog-selector {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10%;
+}
+
+.selector-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-right: 20px;
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+.selector {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+
+}
+
+.fixtures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+    width: 80%;
+}
+
+.fixture {
+    border: 1px solid lightgray;
+    border-radius: 5%;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.view-all {
+    background-color: rgb(241, 11, 11);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2%;
+    margin-top: 15%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* --------------------- 
+         Fotter Section 
+     ----------------------- */
+.footer {
+    background-color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.goal {
+    color: rgb(216, 203, 203);
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+hr {
+    margin: 0 10%;
+
+}
+
+.footer-nav {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: lightgray;
+    padding: 0 2%;
+
+}
+
+.footer-icon {
+    padding-bottom: 7%;
+
+}
+
+.footer-icon a {
+    padding: 0 1%;
+}
+
+/*----------------------
+  For Mobile Phone 
+  ----------------------*/
+
+@media screen and (max-width: 600px) {
+    .view-all {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .blog-selector {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .selector-bar {
+        background-color: white;
+        margin-left: 20%;
+    }
+
+    .selector {
+        border: 1px solid lightgray
+    }
+
+    .fixtures {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 600px;
+    }
+
+    .footer-nav a {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+}
+
+/*-----------------
+       For Tablet 
+  -----------------*/
+@media screen and (min-width:600px) and (max-width:992px) {
+    .blog-selector {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .selector-bar {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+    }
+
+    .selector {
+        width: 25%;
+        border: 1px solid lightsteelblue;
+    }
+
+    .fixtures {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 10%;
+    }
+}
+
+/* ----------------
+     For big device 
+     --------------*/
+@media screen and (min-width:992px) {
+    .view-all {
+        display: none;
+    }
+}
